@@ -1,6 +1,7 @@
 {
   "name": "spa_react_typescript_hello-world",
   "version": "0.1.0",
+  "homepage": "https://swilson96.github.io/spa_react_typescript_hello-world",
   "private": true,
   "dependencies": {
     "@auth0/auth0-react": "^2.0.0",
@@ -12,6 +13,8 @@
     "typescript": "^4.7.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "cross-env PORT=4040 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -43,6 +46,7 @@
     "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.1.0",
+    "gh-pages": "^6.3.0",
     "prettier": "^2.7.1"
   }
 }

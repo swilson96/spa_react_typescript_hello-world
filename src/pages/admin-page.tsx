@@ -50,9 +50,7 @@ export const AdminPage: React.FC = () => {
             </span>
             <span>
               <strong>
-                Only authenticated users with the{" "}
-                <code>read:admin-messages</code> permission should access this
-                page.
+                Only authenticated users with a specific admin role should access this page.
               </strong>
             </span>
           </p>
